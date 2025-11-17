@@ -6,13 +6,61 @@
       "senha": "123",
       "nome": "Administrador do Sistema",
       "email": "admin@abc.com"
+    }
+  ],
+  "modelos": [
+    {
+      "id": "1",
+      "titulo": "Nike Air Force 1 '07",
+      "descricao": "O clássico atemporal que nunca sai de moda",
+      "conteudo": "O Nike Air Force 1 '07 é um ícone da cultura sneaker. Com seu design limpo e solado de borracha durável, este tênis oferece conforto e estilo para qualquer ocasião. A tecnologia Air na entressola proporciona amortecimento suave o dia todo.",
+      "categoria": "Casual",
+      "marca": "Nike",
+      "valor": "R$ 759,99",
+      "data": "2025-03-30",
+      "imagem": "imgs/tenisNike.png",
+      "imagemDetalhe": "imgs/tenisNike.png",
+      "linkCompra": "https://www.nike.com.br/tenis-nike-air-force-1-07-masculino-011137.html",
+      "fotosDetalhe": [
+        { "img": "imgs/tenisNike.png", "legenda": "Vista Lateral" },
+        { "img": "imgs/tenisNike.png", "legenda": "Vista Superior" },
+        { "img": "imgs/tenisNike.png", "legenda": "Detalhe Traseiro" },
+        { "img": "imgs/tenisNike.png", "legenda": "Sola" }
+      ]
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "titulo": "Adidas Superstar",
+      "marca": "Adidas",
+      "valor": "R$ 499,99",
+      "descricao": "O lendário tênis com bico de casca de camarão",
+      "conteudo": "O Adidas Superstar revolucionou o basquete nos anos 70 e se tornou um ícone da cultura urbana. Com seu distintivo bico de casca de camarão e três listras, este tênis combina heritage esportivo com estilo contemporâneo.",
+      "categoria": "Casual",
+      "imagem": "imgs/tenisAdidas.png",
+      "imagemDetalhe": "imgs/tenisAdidas.png",
+      "linkCompra": "https://www.adidas.com.br/tenis-superstar/EG4958.html",
+      "data": "2025-11-02",
+      "id": "2",
+      "fotosDetalhe": [
+        { "img": "imgs/tenisAdidas.png", "legenda": "Vista Lateral" },
+        { "img": "imgs/tenisAdidas.png", "legenda": "Vista de Cima" }
+      ]
+    },
+    {
+      "id": "4",
+      "titulo": "Puma Suede XL",
+      "descricao": "Clássico reinventado com atitude streetwear",
+      "conteudo": "O Puma Suede XL é uma evolução do icônico modelo Suede. Com solado mais robusto e design ampliado, mantém a essência do original enquanto adiciona uma vibe contemporânea. Perfeito para quem busca estilo e conforto.",
+      "categoria": "Skate",
+      "marca": "Puma",
+      "valor": "R$ 599,99",
+      "data": "2025-03-26",
+      "imagem": "imgs/tenisPuma.png",
+      "imagemDetalhe": "imgs/tenisPuma.png",
+      "linkCompra": "https://br.puma.com/tenis-suede-xl-395205-02.html",
+      "fotosDetalhe": [
+        { "img": "imgs/tenisPuma.png", "legenda": "Vista Lateral" },
+        { "img": "imgs/tenisPuma.png", "legenda": "Vista de Cima" }
+      ]
     }
   ]
 }

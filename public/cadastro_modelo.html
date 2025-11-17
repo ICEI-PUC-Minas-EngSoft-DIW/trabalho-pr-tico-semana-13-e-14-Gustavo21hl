@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - TenisBlog</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html" class="logo-link">
+          <div class="logo">
+            <img src="imgs/logo.png" alt="Logo do Site" />
+            <p>TenisBlog</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html#secao_marcas">Marcas</a></li>
+            <li><a href="index.html#artigo">Artigos</a></li>
+            <li><a href="index.html#modelos">Modelos</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li>
+              <a href="cadastro_modelo.html" class="nav-novo">Cadastrar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="detalhes">
+      <div class="detalhes-container">
+        <div class="form-container">
+          <h1>Cadastrar Novo Modelo</h1>
+          <form id="form-modelo">
+            <input type="hidden" id="modelo-id" />
+
+            <div class="form-group">
+              <label for="titulo">Título do Modelo</label>
+              <input type="text" id="titulo" required />
+            </div>
+
+            <div class="form-group">
+              <label for="marca">Marca</label>
+              <input type="text" id="marca" required />
+            </div>
+
+            <div class="form-group">
+              <label for="valor">Valor (Ex: R$ 799,99)</label>
+              <input type="text" id="valor" required />
+            </div>
+
+            <div class="form-group">
+              <label for="descricao">Descrição Curta</label>
+              <textarea id="descricao" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="conteudo">Conteúdo (Detalhes)</label>
+              <textarea id="conteudo" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="categoria">Categoria</label>
+              <input type="text" id="categoria" required value="Casual" />
+            </div>
+
+            <div class="form-group">
+              <label for="imagem-file">Upload de Imagem Principal</label>
+              <input type="file" id="imagem-file" accept="image/*" />
+              <input type="hidden" id="imagem" />
+              <img
+                id="imagem-preview"
+                src=""
+                alt="Pré-visualização da imagem"
+              />
+            </div>
+            <div class="form-group">
+              <label for="linkCompra">Link de Compra</label>
+              <input type="text" id="linkCompra" required />
+            </div>
+
+            <div class="form-acoes">
+              <button type="submit" class="btn-salvar">Salvar Modelo</button>
+              <a href="index.html" class="btn-voltar">Cancelar</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer" id="Contatos">
+        <div class="footer-bottom">
+          <p>&copy; 2025 TenisBlog. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/scripts/app.js"></script>
+  </body>
+</html>

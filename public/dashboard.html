@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - TenisBlog</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      .pagina-conteudo {
+        padding-top: 80px; /* Espaço para o header fixo */
+        padding-bottom: 40px;
+        min-height: 80vh;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .dashboard-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 20px;
+      }
+      .chart-box {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .chart-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      /* Responsividade */
+      @media (max-width: 900px) {
+        .dashboard-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html" class="logo-link">
+          <div class="logo">
+            <img src="imgs/logo.png" alt="Logo do Site" />
+            <p>TenisBlog</p>
+          </div>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html#secao_marcas">Marcas</a></li>
+            <li><a href="index.html#artigo">Artigos</a></li>
+            <li><a href="index.html#modelos">Modelos</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li>
+              <a href="cadastro_modelo.html" class="nav-novo">Cadastrar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pagina-conteudo">
+      <div class="container">
+        <h1 style="text-align: center">Dashboard de Modelos</h1>
+        <p style="text-align: center; font-size: 1.1rem; margin-bottom: 20px">
+          Visualização dinâmica dos dados cadastrados no sistema.
+        </p>
+
+        <div class="dashboard-container">
+          <div class="chart-box">
+            <h2>Modelos por Marca</h2>
+            <canvas id="graficoMarcas"></canvas>
+          </div>
+          <div class="chart-box">
+            <h2>Modelos por Categoria</h2>
+            <canvas id="graficoCategorias"></canvas>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer" id="Contatos">
+        <div class="footer-logo">
+          <p>TenisBlog</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="index.html#secao_marcas">Marcas</a></li>
+            <li><a href="index.html#artigo">Artigos</a></li>
+            <li><a href="index.html#modelos">Modelos</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TenisBlog. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="assets/scripts/dashboard.js"></script>
+  </body>
+</html>
